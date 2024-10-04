@@ -1,3 +1,5 @@
+require './object_oriented/stock'
+
 class Storage
   def initialize
     @stocks = {}
