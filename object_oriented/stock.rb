@@ -3,8 +3,8 @@ class Stock
     @quantity = quantity
   end
 
-  def quantity
-    @quantity
+  def empty?
+    @quantity == 0
   end
 
   def decrement

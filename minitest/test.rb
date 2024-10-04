@@ -12,7 +12,7 @@ class VendingMachineTest < Minitest::Test
     drink = @vm.buy(Coin::FIVE_HUNDRED, DrinkType::COKE)
     change = @vm.refund
 
-    assert_equal(DrinkType::COKE, drink.kind)
+    assert_equal(true, drink.coke?)
     assert_equal('400', change.to_s)
   end
 
