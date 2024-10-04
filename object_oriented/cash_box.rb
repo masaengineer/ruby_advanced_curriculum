@@ -1,5 +1,6 @@
-class CashBox
+'./object_oriented/coin'
 
+class CashBox
   def initialize(quantity)
     @number_of_100yen = [Coin::ONE_HUNDRED] * quantity
   end

@@ -1,3 +1,6 @@
+'./object_oriented/storage'
+'./object_oriented/coinmech'
+
 class VendingMachine
   def initialize
     @storage = Storage.new
