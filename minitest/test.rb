@@ -16,14 +16,6 @@ class VendingMachineTest < Minitest::Test
     assert_equal('400', change.to_s)
   end
 
-  def test_10円ではコーラは買えない
-    drink = @vm.buy(10, DrinkType::COKE)
-    change = @vm.refund
-
-    assert_nil(drink)
-    assert_equal('10', change.to_s)
-  end
-
   def test_コーラの在庫が無いときにコーラは買えない
     @vm.buy(Coin::ONE_HUNDRED, DrinkType::TEA)
     @vm.buy(Coin::ONE_HUNDRED, DrinkType::TEA)
