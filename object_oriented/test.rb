@@ -8,11 +8,11 @@ class VendingMachineTest < Minitest::Test
   end
 
   def test_500円でコーラを購入
-    drink = @vm.buy(500, Drink::COKE)
+    drink = @vm.buy(Coin::FIVE_HUNDRED, DrinkType::COKE)
     change = @vm.refund
 
-    assert_equal(Drink::COKE, drink.kind)
-    assert_equal(400, change)
+    assert_equal(DrinkType::COKE, drink.kind)
+    assert_equal([Coin::ONE_HUNDRED] * 4, change)
   end
 
   def test_10円ではコーラは買えない
