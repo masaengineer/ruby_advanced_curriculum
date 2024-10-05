@@ -1,4 +1,4 @@
-'./object_oriented/coin'
+require './object_oriented/money/coin'
 
 class CashBox
   def initialize(quantity)
@@ -23,11 +23,11 @@ class CashBox
 
   private
 
-  def pop
-    @number_of_100yen.pop
-  end
-
   def size
     @number_of_100yen.length
+  end
+
+  def pop
+    @number_of_100yen.pop
   end
 end

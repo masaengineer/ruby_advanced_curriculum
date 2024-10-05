@@ -1,4 +1,4 @@
-require './object_oriented/drink'
+require './object_oriented/drink/drink'
 require './object_oriented/vending_machine'
 
 vm = VendingMachine.new

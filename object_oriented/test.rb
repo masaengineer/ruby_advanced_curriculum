@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require './object_oriented/vending_machine'
-require './object_oriented/drink'
+require './object_oriented/drink/drink_type'
+require './object_oriented/money/coin'
 
 class VendingMachineTest < Minitest::Test
   def setup

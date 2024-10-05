@@ -1,4 +1,4 @@
-require './object_oriented/stock'
+require './object_oriented/stock/stock'
 
 class Storage
   def initialize

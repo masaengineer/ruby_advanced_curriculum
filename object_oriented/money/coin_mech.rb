@@ -1,6 +1,6 @@
-require './object_oriented/cash_box'
-require './object_oriented/change'
-require './object_oriented/payment'
+require './object_oriented/money/cash_box'
+require './object_oriented/money/change'
+require './object_oriented/money/payment'
 
 class CoinMech
   def initialize
