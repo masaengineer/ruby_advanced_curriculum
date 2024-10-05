@@ -1,4 +1,5 @@
 require './object_oriented/stock/stock'
+require './object_oriented/drink/drink'
 
 class Storage
   def initialize
